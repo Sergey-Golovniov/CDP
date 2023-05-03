@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <div class="chart" id="chart"></div>
+
+     <canvas id="myCanvas"></canvas>
+
+     <div class="chart" id="clickzone"></div>
+     <!-- круг -->
+     <button class="showObserver">observer</button>
+
+     <section class="creator">
+          <section class="activities">
+               <div class="field"> <span>name:</span> <input type="text"> </div>
+               <div class="field"> <span>min(minutes):</span> <input type="text"> </div>
+               <div class="field"> <span>max(minutes):</span> <input type="text"> </div>
+               <div class="field"> <span>weight:</span> <input type="text"> </div>
+               <div class="field"> <button>change</button> </div>
+          </section>
+
+          <section class="passivities">
+               <div class="field"><span>name:</span><input type="text"></div>
+               <div class="field"><span>start(X:xx):</span><input type="text"></div>
+               <div class="field"><span>duration:</span><input type="text"></div>
+               <section class="field checkboxes">
+                    <span>schedule:</span>
+                    <div>
+                         <label for="monday">mon</label>
+                         <input type="checkbox" name="monday" id="monday">
+                    </div>
+                    <div>
+                         <label for="tuesday">tue</label>
+                         <input type="checkbox" name="tuesday" id="tuesday">
+                    </div>
+                    <div>
+                         <label for="wednesday">wed</label>
+                         <input type="checkbox" name="wednesday" id="wednesday">
+                    </div>
+                    <div>
+                         <label for="thursday">thu</label>
+                         <input type="checkbox" name="thursday" id="thursday">
+                    </div>
+                    <div>
+                         <label for="friday">fri</label>
+                         <input type="checkbox" name="friday" id="friday">
+                    </div>
+                    <div>
+                         <label for="saturday">sat</label>
+                         <input type="checkbox" name="saturday" id="saturday">
+                    </div>
+                    <div>
+                         <label for="sunday">sun</label>
+                         <input type="checkbox" name="sunday" id="sunday">
+                    </div>
+               </section>
+               <div class="field"><button>change</button></div>
+          </section>
+
+     </section>
+
+     <section class="observer">
+
+          <h1>Passivities</h1>
+
+          <table class="passivitiesT">
+               <tr>
+                    <td><b>Name</b></td>
+                    <td><b>Start</b></td>
+                    <td><b>Duration</b></td>
+                    <td><b>Schedule</b></td>
+                    <td>Remove</td>
+               </tr>
+
+          </table>
+
+          <button class="new">new passivity</button>
+
+
+          <h1>Activities</h1>
+
+          <table class="activitiesT">
+               <tr>
+                    <td><b>Name</b></td>
+                    <td><b>Min</b></td>
+                    <td><b>Max</b></td>
+                    <td><b>Weight</b></td>
+                    <td>Remove</td>
+               </tr>
+          </table>
+
+          <button class="new">new activity</button>
+
+     </section>
+     <button class="reload"> reload plans</button>
+
+
+     <script src="script.js"></script>
+     <script src="algFoundation.js"></script>
+     <script src="firstAlg.js"></script>
+     <!-- <script src="secondAlg.js"></script> -->
+     <script src="leshin2.js"></script>
+</body>
+
+</html>

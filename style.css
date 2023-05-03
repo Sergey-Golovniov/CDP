@@ -1,0 +1,146 @@
+body{
+     margin:0;
+     
+}
+.creator{
+     display: none;
+     height: 240px;
+     width: 500px;
+     border: 1px solid black;
+
+     margin: auto;
+}
+
+.passivities, .activities{
+     height: 240px;
+     
+     display: none;
+     flex-direction: column;
+     gap:20px;
+     align-items: center;
+}
+
+.field {
+     height: 20px;
+     /* width: 200px; */
+     display: flex;
+     gap: 2px;
+     justify-content: right;
+}
+
+.field span {
+     font-family: sans-serif;
+     font-size: 14px;
+
+     height: 15px; 
+     margin-top: 1px;
+}
+
+.field input{
+     outline: none;
+     border-radius: 0%;
+     border: 1px solid black;
+
+     float: right;
+}
+
+.field input[type='text'] {
+     width: 100px;
+}
+
+.field:first-child{
+     margin-top: 31px;
+}
+
+.field button{
+     width: 100%;
+
+}
+
+.field div {
+     font-family: monospace;
+     font-size: 10px;
+}
+
+.checkboxes {
+     margin-top: 0px;
+}
+
+.checkboxes div {
+     display:flex;
+     align-items: center;
+     user-select: none;
+}
+
+
+.observer{
+     display: none;
+
+     min-height: 300px;
+     height: min-content;
+     width: 500px;
+
+     margin: auto;
+     
+     border-top: 1px solid black;
+     border-bottom: 1px solid black;
+}
+
+.observer h1 {
+     font-family: system-ui;
+     width: min-content;
+     margin: 30px auto 15px;
+}
+
+.observer table {
+     border-collapse: collapse;
+     font-family: monospace;
+
+     border: 1px solid black;
+     border-radius: 5px;
+}
+
+.observer table td {
+     padding: 10px 0;
+     width: 100px;
+     text-align: center;
+     /* border: 1px solid black; */
+}
+
+.new{
+     display: block;
+     margin: 25px 30px 30px auto;
+
+     background-color: white;
+
+     border: 1px solid black;
+     border-top: none;
+     border-left: none;
+
+     font-weight:bold;
+     font-family: monospace;
+
+}
+.new:nth-of-type(2){
+     margin-bottom: 50px;
+}
+
+
+
+.chart {
+     position: absolute;
+     top: 45px;
+     left: 45px;
+     width: 250px;
+     height: 250px;
+     border-radius: 50%;
+     background-color: rgba(255, 255, 255, 100);
+}
+ #clickzone{
+     top: -2px;
+     left: -2px;
+     width: 360px;
+     height: 360px;
+     background-color: rgba(0, 0, 0, 0); 
+ }
+
