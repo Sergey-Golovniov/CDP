@@ -173,7 +173,7 @@ function replaceWorkReversed(currentIndex, planName) {
      replaceWork(currentIndex - 1, planName)
 }
 
-function deleteWork(currentIndex, planName) {
+function cutWork(currentIndex, planName) {
      let plans = getPlans();
 
      let nextIndex = currentIndex + 1;
@@ -193,12 +193,12 @@ function deleteWork(currentIndex, planName) {
           return;
      } else {
           replaceWork(currentIndex, planName);
-          deleteWork(nextIndex, planName);
+          cutWork(nextIndex, planName);
      } 
 
 }
 
-function changeWork (planName, index, newName, newStart, newDuration) {
+function changeWork(planName, index, newName, newStart, newDuration) {
      let plans = getPlans();
      let work = plans[planName][index];
 
